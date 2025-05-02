@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Create a New Playlist</h2>
+
+<form method="POST">
+    {% csrf_token %}
+    
+    <fieldset>
+        <legend>Playlist Info</legend>
+        {{ playlist_form.as_p }}
+    </fieldset>
+
+    <fieldset>
+        <legend>Select Songs</legend>
+        {{ song_form.as_p }}
+    </fieldset>
+
+    <button type="submit">Create Playlist</button>
+</form>
+{% endblock %}

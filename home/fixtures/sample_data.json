@@ -1,0 +1,502 @@
+[
+    {
+      "model": "home.user",
+      "pk": 2,
+      "fields": {
+        "username": "sam"
+      }
+    },
+    {
+      "model": "home.playlist",
+      "pk": 2,
+      "fields": {
+        "title": "weekend/travis scott",
+        "user": 2
+      }
+    },
+    {
+      "model": "home.playlist",
+      "pk": 3,
+      "fields": {
+        "title": "Indie music",
+        "user": 2
+      }
+    },
+    {
+      "model": "home.artist",
+      "pk": 3,
+      "fields": {
+        "name": "The Weeknd"
+      }
+    },
+    {
+      "model": "home.genre",
+      "pk": 3,
+      "fields": {
+        "name": "Pop"
+      }
+    },
+    {
+      "model": "home.album",
+      "pk": 3,
+      "fields": {
+        "title": "Dawn FM",
+        "release_year": 2024
+      }
+    },
+    {
+      "model": "home.song",
+      "pk": 4,
+      "fields": {
+        "title": "Is There Someone Else?",
+        "duration": 3.19,
+        "artist": 3,
+        "genre": 3,
+        "album": 3
+      }
+    },
+    {
+      "model": "home.playlistsong",
+      "pk": 4,
+      "fields": {
+        "playlist": 2,
+        "song": 4
+      }
+    },
+    {
+      "model": "home.genre",
+      "pk": 4,
+      "fields": {
+        "name": "R&B"
+      }
+    },
+    {
+      "model": "home.song",
+      "pk": 5,
+      "fields": {
+        "title": "Less Than Zero",
+        "duration": 3.32,
+        "artist": 3,
+        "genre": 4,
+        "album": 3
+      }
+    },
+    {
+      "model": "home.playlistsong",
+      "pk": 5,
+      "fields": {
+        "playlist": 2,
+        "song": 5
+      }
+    },
+    {
+      "model": "home.album",
+      "pk": 4,
+      "fields": {
+        "title": "Popular",
+        "release_year": 2024
+      }
+    },
+    {
+      "model": "home.song",
+      "pk": 6,
+      "fields": {
+        "title": "Popular (with Playboi Carti & Madonna)",
+        "duration": 3.35,
+        "artist": 3,
+        "genre": 3,
+        "album": 4
+      }
+    },
+    {
+      "model": "home.playlistsong",
+      "pk": 6,
+      "fields": {
+        "playlist": 2,
+        "song": 6
+      }
+    },
+    {
+      "model": "home.album",
+      "pk": 5,
+      "fields": {
+        "title": "Save Your Tears (Remix)",
+        "release_year": 2024
+      }
+    },
+    {
+      "model": "home.song",
+      "pk": 7,
+      "fields": {
+        "title": "Save Your Tears (with Ariana Grande) (Remix)",
+        "duration": 3.11,
+        "artist": 3,
+        "genre": 4,
+        "album": 5
+      }
+    },
+    {
+      "model": "home.playlistsong",
+      "pk": 7,
+      "fields": {
+        "playlist": 2,
+        "song": 7
+      }
+    },
+    {
+      "model": "home.album",
+      "pk": 6,
+      "fields": {
+        "title": "Starboy",
+        "release_year": 2024
+      }
+    },
+    {
+      "model": "home.song",
+      "pk": 8,
+      "fields": {
+        "title": "Starboy",
+        "duration": 3.5,
+        "artist": 3,
+        "genre": 3,
+        "album": 6
+      }
+    },
+    {
+      "model": "home.playlistsong",
+      "pk": 8,
+      "fields": {
+        "playlist": 2,
+        "song": 8
+      }
+    },
+    {
+      "model": "home.artist",
+      "pk": 4,
+      "fields": {
+        "name": "Travis Scott"
+      }
+    },
+    {
+      "model": "home.album",
+      "pk": 7,
+      "fields": {
+        "title": "ASTROWORLD",
+        "release_year": 2024
+      }
+    },
+    {
+      "model": "home.song",
+      "pk": 9,
+      "fields": {
+        "title": "STOP TRYING TO BE GOD",
+        "duration": 5.38,
+        "artist": 4,
+        "genre": 4,
+        "album": 7
+      }
+    },
+    {
+      "model": "home.playlistsong",
+      "pk": 9,
+      "fields": {
+        "playlist": 2,
+        "song": 9
+      }
+    },
+    {
+      "model": "home.song",
+      "pk": 10,
+      "fields": {
+        "title": "SKELETONS",
+        "duration": 2.26,
+        "artist": 4,
+        "genre": 3,
+        "album": 7
+      }
+    },
+    {
+      "model": "home.playlistsong",
+      "pk": 10,
+      "fields": {
+        "playlist": 2,
+        "song": 10
+      }
+    },
+    {
+      "model": "home.song",
+      "pk": 11,
+      "fields": {
+        "title": "BUTTERFLY EFFECT",
+        "duration": 3.11,
+        "artist": 4,
+        "genre": 4,
+        "album": 7
+      }
+    },
+    {
+      "model": "home.playlistsong",
+      "pk": 11,
+      "fields": {
+        "playlist": 2,
+        "song": 11
+      }
+    },
+    {
+      "model": "home.song",
+      "pk": 12,
+      "fields": {
+        "title": "COFFEE BEAN",
+        "duration": 3.29,
+        "artist": 4,
+        "genre": 3,
+        "album": 7
+      }
+    },
+    {
+      "model": "home.playlistsong",
+      "pk": 12,
+      "fields": {
+        "playlist": 2,
+        "song": 12
+      }
+    },
+    {
+      "model": "home.album",
+      "pk": 8,
+      "fields": {
+        "title": "Birds In The Trap Sing McKnight",
+        "release_year": 2024
+      }
+    },
+    {
+      "model": "home.song",
+      "pk": 13,
+      "fields": {
+        "title": "way back",
+        "duration": 4.33,
+        "artist": 4,
+        "genre": 4,
+        "album": 8
+      }
+    },
+    {
+      "model": "home.playlistsong",
+      "pk": 13,
+      "fields": {
+        "playlist": 2,
+        "song": 13
+      }
+    },
+    {
+      "model": "home.song",
+      "pk": 14,
+      "fields": {
+        "title": "wonderful",
+        "duration": 3.37,
+        "artist": 4,
+        "genre": 3,
+        "album": 8
+      }
+    },
+    {
+      "model": "home.playlistsong",
+      "pk": 14,
+      "fields": {
+        "playlist": 2,
+        "song": 14
+      }
+    },
+    {
+      "model": "home.artist",
+      "pk": 5,
+      "fields": {
+        "name": "Steve Lacy"
+      }
+    },
+    {
+      "model": "home.genre",
+      "pk": 5,
+      "fields": {
+        "name": "Alt R&B"
+      }
+    },
+    {
+      "model": "home.album",
+      "pk": 9,
+      "fields": {
+        "title": "Gemini Rights",
+        "release_year": 2024
+      }
+    },
+    {
+      "model": "home.song",
+      "pk": 15,
+      "fields": {
+        "title": "Static",
+        "duration": 2.37,
+        "artist": 5,
+        "genre": 5,
+        "album": 9
+      }
+    },
+    {
+      "model": "home.playlistsong",
+      "pk": 15,
+      "fields": {
+        "playlist": 3,
+        "song": 15
+      }
+    },
+    {
+      "model": "home.song",
+      "pk": 16,
+      "fields": {
+        "title": "Sunshine (feat. Foushe\u00e9)",
+        "duration": 4.53,
+        "artist": 5,
+        "genre": 5,
+        "album": 9
+      }
+    },
+    {
+      "model": "home.playlistsong",
+      "pk": 16,
+      "fields": {
+        "playlist": 3,
+        "song": 16
+      }
+    },
+    {
+      "model": "home.genre",
+      "pk": 6,
+      "fields": {
+        "name": "Indie Soul"
+      }
+    },
+    {
+      "model": "home.song",
+      "pk": 17,
+      "fields": {
+        "title": "Give You the World",
+        "duration": 4.34,
+        "artist": 5,
+        "genre": 6,
+        "album": 9
+      }
+    },
+    {
+      "model": "home.playlistsong",
+      "pk": 17,
+      "fields": {
+        "playlist": 3,
+        "song": 17
+      }
+    },
+    {
+      "model": "home.artist",
+      "pk": 6,
+      "fields": {
+        "name": "TV Girl"
+      }
+    },
+    {
+      "model": "home.genre",
+      "pk": 7,
+      "fields": {
+        "name": "Indie Pop"
+      }
+    },
+    {
+      "model": "home.album",
+      "pk": 10,
+      "fields": {
+        "title": "Death of a Party Girl",
+        "release_year": 2024
+      }
+    },
+    {
+      "model": "home.song",
+      "pk": 18,
+      "fields": {
+        "title": "Blue Hair",
+        "duration": 3.37,
+        "artist": 6,
+        "genre": 7,
+        "album": 10
+      }
+    },
+    {
+      "model": "home.playlistsong",
+      "pk": 18,
+      "fields": {
+        "playlist": 3,
+        "song": 18
+      }
+    },
+    {
+      "model": "home.album",
+      "pk": 11,
+      "fields": {
+        "title": "French Exit",
+        "release_year": 2024
+      }
+    },
+    {
+      "model": "home.song",
+      "pk": 19,
+      "fields": {
+        "title": "Birds Dont Sing",
+        "duration": 3.29,
+        "artist": 6,
+        "genre": 7,
+        "album": 11
+      }
+    },
+    {
+      "model": "home.playlistsong",
+      "pk": 19,
+      "fields": {
+        "playlist": 3,
+        "song": 19
+      }
+    },
+    {
+      "model": "home.song",
+      "pk": 20,
+      "fields": {
+        "title": "The Blonde",
+        "duration": 3.48,
+        "artist": 6,
+        "genre": 7,
+        "album": 11
+      }
+    },
+    {
+      "model": "home.playlistsong",
+      "pk": 20,
+      "fields": {
+        "playlist": 3,
+        "song": 20
+      }
+    },
+    {
+      "model": "home.song",
+      "pk": 21,
+      "fields": {
+        "title": "Lovers Rock",
+        "duration": 3.34,
+        "artist": 6,
+        "genre": 7,
+        "album": 11
+      }
+    },
+    {
+      "model": "home.playlistsong",
+      "pk": 21,
+      "fields": {
+        "playlist": 3,
+        "song": 21
+      }
+    }
+  ]

@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Playlist: {{ playlist.title }} ({{ playlist.user.username }})</h2>
+
+<!-- ---------- FILTER FORM ---------- -->
+<form method="get" style="margin-bottom: 1rem;">
+    <label for="artist">Artist:</label>
+    <select name="artist" id="artist">
+        <option value="">All</option>
+        {% for a in artist_choices %}
+            <option value="{{ a.artist_id }}" {% if a.artist_id == selected_artist_id %}selected{% endif %}>
+                {{ a.name }}
+            </option>
+        {% endfor %}
+    </select>
+
+    <label for="genre">Genre:</label>
+    <select name="genre" id="genre">
+        <option value="">All</option>
+        {% for g in genre_choices %}
+            <option value="{{ g.genre_id }}" {% if g.genre_id == selected_genre_id %}selected{% endif %}>
+                {{ g.name }}
+            </option>
+        {% endfor %}
+    </select>
+
+    <button type="submit">Filter</button>
+</form>
+
+<!-- ---------- SONG LIST ---------- -->
+<h3>Songs</h3>
+<table>
+    <tr><th>Title</th><th>Artist</th><th>Genre</th><th>Duration (min)</th></tr>
+    {% for s in songs %}
+        <tr>
+            <td>{{ s.title }}</td>
+            <td>{{ s.artist.name }}</td>
+            <td>{{ s.genre.name }}</td>
+            <td>{{ s.duration }}</td>
+        </tr>
+    {% empty %}
+        <tr><td colspan="4">No songs match the current filter.</td></tr>
+    {% endfor %}
+</table>
+
+<!-- ---------- STATS ---------- -->
+<h3>Statistics</h3>
+<ul>
+    <li><strong>Longest song:</strong> {{ max_dur|default:"N/A" }} min</li>
+    <li><strong>Shortest song:</strong> {{ min_dur|default:"N/A" }} min</li>
+    <li><strong>Average duration:</strong> {{ avg_dur|floatformat:2|default:"N/A" }} min</li>
+    <li><strong>Top artist(s):</strong>
+        {% if top_artists %}
+            {% for name, cnt in top_artists %}
+                {{ name }} ({{ cnt }}){% if not forloop.last %}, {% endif %}
+            {% endfor %}
+        {% else %}
+            N/A
+        {% endif %}
+    </li>
+</ul>
+
+<p><a href="{% url 'playlist_list' %}">&larr; Back to playlists</a></p>
+{% endblock %}

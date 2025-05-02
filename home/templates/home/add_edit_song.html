@@ -1,0 +1,18 @@
+<!-- add_edit_song.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ action }} Song</title>
+</head>
+<body>
+    <h1>{{ action }} Song</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">{{ action }} Song</button>
+    </form>
+    <br>
+    <a href="{% url 'song_list' %}">Back to Song List</a>
+</body>
+</html>
